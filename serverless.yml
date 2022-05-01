@@ -9,9 +9,8 @@ provider:
 functions:
   hello:
     handler: handler.hello
-
+#se arreglara el yml.
   buscadorTaller:
-
     handler: src/buscador/contolador.buscadorTallerQuery
     events:
       - http:
