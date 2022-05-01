@@ -1,0 +1,18 @@
+Feature: Buscardor de talleres por filtros
+
+# Primer Scenario
+Scenario: El cliente ingresa su información al buscador
+
+Given: El cliente debe tener registrado la informacion de su vehiculo y su poliza
+
+When: El cliente ingresa su placa y selecciona su distrito, y el tipo de taller
+
+Then: El sistema le devuelve un listado de talleres con los deducibles.
+
+
+# Segundo Scenario
+Scenario: El cliente no ingresa toda la información al buscador
+
+When: El cliente no ingresa su placa pero si selecciono su distrito, y el tipo de taller
+
+Then: El sistema no le devuelve talleres porque no puede calcular los deducibles por no tener la placa para validar su poliza
