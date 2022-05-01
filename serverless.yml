@@ -11,13 +11,10 @@ functions:
     handler: handler.hello
 #se arreglara el yml.
   buscadorTaller:
-    handler: src/buscador/contolador.buscadorTallerQuery
+    handler: src/buscador/controlador.buscadorTallerQuery
     events:
       - http:
           method: GET
           cors: true
-          path: /savePeople/{idPeople}
-          request: 
-            parameters: 
-              paths: 
-                idPeople: false
+          path: /buscador
+          integration: lambda
