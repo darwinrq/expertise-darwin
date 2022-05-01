@@ -1,0 +1,23 @@
+git checkout -b dev
+# primer commit
+git add -A
+git commit -m "agregar iltros"
+git push origin dev
+
+# segundo commit
+git add -A
+git commit -m "agregar detalle"
+git push origin dev
+
+# tercer commit
+git add -A
+git commit -m "fix filtro"
+git push origin dev
+
+#merge
+git checkout -b merge
+git cherry-pick c5323b85d359bcdcaf6021c4b90a9bee982824da(primer commit) 7c5d0c961c595598b11a8dc826f83af8abd4cda7 (segundo commit)
+git push origin merge
+
+#pull requests
+https://github.com/darwinrq/expertise-darwin/pull/1
