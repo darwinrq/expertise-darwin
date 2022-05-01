@@ -9,12 +9,27 @@ provider:
 functions:
   hello:
     handler: handler.hello
+<<<<<<< HEAD
 #se arreglara el yml.
   buscadorTaller:
     handler: src/buscador/controlador.buscadorTallerQuery
+=======
+
+  buscadorTaller:
+
+    handler: src/buscador/contolador.buscadorTallerQuery
+>>>>>>> c5323b8... agregar iltros
     events:
       - http:
           method: GET
           cors: true
+<<<<<<< HEAD
           path: /buscador
           integration: lambda
+=======
+          path: /savePeople/{idPeople}
+          request: 
+            parameters: 
+              paths: 
+                idPeople: false
+>>>>>>> c5323b8... agregar iltros
